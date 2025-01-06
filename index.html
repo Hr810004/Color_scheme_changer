@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: all .3s ease-in;
+        }
+
+        .project1{
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+            height: 50vh;
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button {
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 10%;
+            box-shadow:5px 5px 10px rgba(0,0,0,0.5);
+            width: 100px;
+            height: 100px;
+            transition: .3s all ease-out;
+        }
+        .button:hover{
+            transform: translateY(-4px);
+            cursor: pointer;
+        }
+        #lightcoral{
+            background-color: lightcoral;
+        }
+        #lightgreen{
+            background-color: lightgreen;
+        }
+        #lightblue{
+            background-color: lightblue;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+        h2 {
+            margin: 20px 50px;
+            color: black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="project1">
+        <h1>Color Scheme Changer</h1>
+            <div class="buttons">
+                <span class="button" id="lightcoral"></span>
+                <span class="button" id="lightgreen"></span>
+                <span class="button" id="lightblue"></span>
+                <span class="button" id="yellow"></span>
+            </div>
+            <h2>Try Clicking on one of the above to change the color of background color of this page</h2>
+    </div>
+    <script src="colorchange.js"></script>
+</body>
+
+</html>
